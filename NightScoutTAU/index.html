@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+	<div class="ui-content">
+    	<div id="content-time">
+    		Time ago ...
+    	</div>
+    	
+        <div id="box_main">
+        	<table>
+        	<tr>
+	        	<td><span style="text-align: center; vertical-align: center; font-size: 200%;" id="content-sgv"></span></td>
+    	    	<td>
+    	    		<table>
+        			<tr><td style="text-align: center; vertical-align: center; font-size: 200%;"><span  id="content-direction"></span></td></tr>
+        			<tr><td style="text-align: center; vertical-align: center; font-size: 50%;"><span  id="content-bgdelta"></span></td></tr>
+        			</table>
+       			</td> 
+       			<td><span style="text-align: center; vertical-align: center; font-size: 150%; color: gray;" id="content-bwpo"></span></td>
+        	</tr>
+        	</table>   
+        </div>
+        
+        <div class="box_onboard">
+            <span class="pill_label">IOB: <span class="pill_text" id="content-iob"></span> </span>
+            <span class="pill_label">COB: <span class="pill_text" id="content-cob"></span> </span>          
+        </div>
+        
+        <div class="box_calculation">        
+            <span class="pill_label">Calc ins.: <span class="pill_text" id="content-bwp"></span> </span>          
+        </div>    
+     </div>
+    
+    </div>
+    
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

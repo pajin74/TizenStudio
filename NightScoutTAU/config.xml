@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/NightScoutTAU" version="1.0.0" viewmodes="maximized">
+    <tizen:app-widget id="YIbWQfAdk3.NightScoutTAU.NightScout" primary="true" max-instance="0">
+        <tizen:widget-label>NightScout Widget!</tizen:widget-label>
+        <tizen:widget-content src="widget/NightScout/index.html">
+            <tizen:widget-size preview="widget/NightScout/preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="YIbWQfAdk3.NightScoutTAU" package="YIbWQfAdk3" required_version="3.0"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png"/>
+    <name>NightScoutTAU</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
